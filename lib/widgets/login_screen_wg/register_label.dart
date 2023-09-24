@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class PasswordForgot extends StatelessWidget {
-  const PasswordForgot({super.key});
+class RegisterLabel extends StatelessWidget {
+  const RegisterLabel({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +10,12 @@ class PasswordForgot extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double hxw = screenHeight * screenHeight;
     double textScaleFactor = MediaQuery.of(context).textScaleFactor;
-
-    return Container(
-      width: screenWidth,
-      child: Text('¿Olvidaste tu contraseña?',
-      style: TextStyle(color: Colors.white, fontSize: textScaleFactor*18),
-      textAlign: TextAlign.end,),
+    
+    return Center(
+          child: Text('¿No tienes cuenta? Registrate aquí', style: TextStyle(
+            color: Colors.white,
+            fontSize: textScaleFactor*18
+          )),
     );
   }
 }

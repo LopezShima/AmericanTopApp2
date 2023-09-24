@@ -1,9 +1,11 @@
+import 'package:american_top_app/widgets/login_screen_wg/boton_inicio.dart';
 import 'package:american_top_app/widgets/login_screen_wg/email_label.dart';
 import 'package:american_top_app/widgets/login_screen_wg/email_textfield.dart';
 import 'package:american_top_app/widgets/login_screen_wg/login_title.dart';
 import 'package:american_top_app/widgets/login_screen_wg/password_forgot.dart';
 import 'package:american_top_app/widgets/login_screen_wg/password_label.dart';
 import 'package:american_top_app/widgets/login_screen_wg/password_textfield.dart';
+import 'package:american_top_app/widgets/login_screen_wg/register_label.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -37,6 +39,10 @@ class LoginScreen extends StatelessWidget {
                 const PasswordLabel(),
                 const PasswordTextField(),
                 const PasswordForgot(),
+                SizedBox(height: screenHeight * 0.08,),
+                const BotonInicio(),
+                SizedBox(height: screenHeight * 0.01),
+                const RegisterLabel(),
               ],
             ),
           )
