@@ -11,7 +11,9 @@ class BotonRegistrar extends StatelessWidget {
     double textScaleFactor = MediaQuery.of(context).textScaleFactor;
 
     return Center(child: ElevatedButton(
-      onPressed: (){}, 
+      onPressed: (){
+        
+      }, 
       child: Text('Registrarse', 
       style: TextStyle(color: Colors.white, fontSize: textScaleFactor*20)), 
       style: ElevatedButton.styleFrom(
